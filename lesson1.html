@@ -1,4 +1,5 @@
 <div id="root"></div>
+<div id="list"></div>
 
 <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
@@ -8,9 +9,18 @@
     // pタグをid=the-next,class=textで生成します。中に'Hello world'と書きます
     const element = React.createElement('p', { id: 'the-text', className: 'text' }, ['Hello world']);
 
+    const list = React.createElement('ul', { className: 'list' }, [
+        React.createElement('li', { className: 'list-item' }, ['one']),
+        React.createElement('li', { className: 'list-item' }, ['two']),
+        React.createElement('li', { className: 'list-item' }, ['three']),
+    ]);
+
     // 描画元の親要素を取得する
     const root = document.getElementById('root');
 
+    const divList = document.getElementById('list');
+
     // React 要素を描画する
     ReactDOM.render(element, root);
+    ReactDOM.render(list, divList);
 </script>
