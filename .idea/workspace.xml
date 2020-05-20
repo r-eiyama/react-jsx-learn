@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3058716-1d9e-4f31-be78-bc0d4d04af86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lesson3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson6.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +51,8 @@
       <option name="presentableId" value="Default" />
       <updated>1589812187581</updated>
       <workItem from="1589812190961" duration="1279000" />
-      <workItem from="1589890076435" duration="4951000" />
+      <workItem from="1589890076435" duration="5479000" />
+      <workItem from="1589966847344" duration="3416000" />
     </task>
     <task id="LOCAL-00001" summary="learn">
       <created>1589894792444</created>
@@ -60,7 +61,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589894792444</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="クイズをやって見た">
+      <created>1589898939755</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1589898939755</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -69,24 +77,27 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="learn" />
-    <option name="LAST_COMMIT_MESSAGE" value="learn" />
+    <MESSAGE value="クイズをやって見た" />
+    <option name="LAST_COMMIT_MESSAGE" value="クイズをやって見た" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="434" y="127" key="CommitChangelistDialog2" timestamp="1589894791966">
+    <state x="434" y="127" key="CommitChangelistDialog2" timestamp="1589898939365">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="434" y="127" key="CommitChangelistDialog2/0.0.1680.1050/-117.-1080.1920.1080@0.0.1680.1050" timestamp="1589894791966" />
+    <state x="434" y="127" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1589898939365" />
     <state x="349" y="164" key="SettingsEditor" timestamp="1589891906589">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="349" y="164" key="SettingsEditor/0.0.1680.1050/-117.-1080.1920.1080@0.0.1680.1050" timestamp="1589891906589" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1589894794320">
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1589898941495">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050/-117.-1080.1920.1080@0.0.1680.1050" timestamp="1589894794320" />
-    <state x="519" y="357" key="com.intellij.ide.util.TipDialog" timestamp="1589890078277">
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1589898941495" />
+    <state x="519" y="357" key="com.intellij.ide.util.TipDialog" timestamp="1589966848053">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="519" y="357" key="com.intellij.ide.util.TipDialog/0.0.1680.1050/-117.-1080.1920.1080@0.0.1680.1050" timestamp="1589890078277" />
+    <state x="519" y="357" key="com.intellij.ide.util.TipDialog/0.0.1680.1050/-117.-1080.1920.1080@0.0.1680.1050" timestamp="1589966848053" />
   </component>
 </project>

@@ -1,0 +1,22 @@
+<div id="root"></div>
+
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel">
+function CountButton() {
+    // const countState = React.useState(0);
+    //
+    // const count = countState[0];
+    // const setCount = countState[1];
+    const [count, setCount] = React.useState(0);
+
+    const handleClick = () => setCount(count + 1);
+
+    return <button onClick={handleClick}>{count}</button>;
+}
+
+ReactDOM.render(<CountButton/>, document.getElementById('root'));
+
+</script>
