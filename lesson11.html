@@ -1,0 +1,29 @@
+<div id="root"></div>
+
+<meta charset="utf-8"/>
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel">
+
+    function App() {
+        const [val, setVal] = React.useState('react');
+
+        const handleChange = e => setVal(e.target.value);
+
+        return (
+            <>
+                <select value={val} onChange={handleChange}>
+                    <option value="react">React</option>
+                    <option value="vue">Vue.js</option>
+                    <option value="angular">Angular</option>
+                </select>
+                <p>選択値：{val}</p>
+            </>
+        );
+    }
+
+    const root = document.getElementById('root');
+    ReactDOM.render(<App/>, root);
+</script>
