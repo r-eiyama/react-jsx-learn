@@ -1,0 +1,41 @@
+<div id="root"></div>
+
+<meta charset="utf-8"/>
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel">
+
+    function App() {
+        const [val, setVal] = React.useState('cat');
+
+        const handleChange = e => setVal(e.target.value);
+
+        return (
+            <>
+                <label>
+                    <input
+                        type="radio"
+                        value="cat"
+                        onChange={handleChange}
+                        checked={val === 'cat'}
+                    />
+                    猫派
+                </label>
+                <label>
+                    <input
+                        type="radio"
+                        value="dog"
+                        onChange={handleChange}
+                        checked={val === 'dog'}
+                    />
+                    犬派
+                </label>
+                <p>選択値：{val}</p>
+            </>
+        );
+    }
+    const root = document.getElementById('root');
+    ReactDOM.render(<App/>, root);
+</script>
