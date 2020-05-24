@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3058716-1d9e-4f31-be78-bc0d4d04af86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lesson13.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson14.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/react-learn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/react-learn.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +53,10 @@
       <updated>1589812187581</updated>
       <workItem from="1589812190961" duration="1279000" />
       <workItem from="1589890076435" duration="5479000" />
-      <workItem from="1589966847344" duration="13827000" />
+      <workItem from="1589966847344" duration="14183000" />
+      <workItem from="1590214700113" duration="4807000" />
+      <workItem from="1590289311037" duration="1310000" />
+      <workItem from="1590300469074" duration="6893000" />
     </task>
     <task id="LOCAL-00001" summary="learn">
       <created>1589894792444</created>
@@ -96,13 +100,43 @@
       <option name="project" value="LOCAL" />
       <updated>1590071673559</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="課題を解く">
+      <created>1590074067517</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1590074067517</updated>
+    </task>
+    <task id="LOCAL-00008" summary="復習">
+      <created>1590218980568</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1590218980568</updated>
+    </task>
+    <task id="LOCAL-00009" summary="数合わせゲーム">
+      <created>1590225693554</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1590225693554</updated>
+    </task>
+    <task id="LOCAL-00010" summary="復習">
+      <created>1590292278693</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1590292278693</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="learn" />
     <MESSAGE value="クイズをやって見た" />
@@ -110,26 +144,30 @@
     <MESSAGE value="課題を説いた" />
     <MESSAGE value="フォームを作成" />
     <MESSAGE value="要素間の値の受け渡し" />
-    <option name="LAST_COMMIT_MESSAGE" value="要素間の値の受け渡し" />
+    <MESSAGE value="課題を解く" />
+    <MESSAGE value="数合わせゲーム" />
+    <MESSAGE value="復習" />
+    <option name="LAST_COMMIT_MESSAGE" value="復習" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="434" y="127" key="CommitChangelistDialog2" timestamp="1590071673231">
+    <state x="434" y="127" key="CommitChangelistDialog2" timestamp="1590292278289">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="434" y="127" key="CommitChangelistDialog2/0.0.1680.1050/-117.-1080.1920.1080@0.0.1680.1050" timestamp="1590071673231" />
+    <state x="434" y="127" key="CommitChangelistDialog2/0.0.1680.1050/-117.-1080.1920.1080@0.0.1680.1050" timestamp="1590292278289" />
     <state x="434" y="127" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1589898939365" />
     <state x="349" y="164" key="SettingsEditor" timestamp="1589891906589">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="349" y="164" key="SettingsEditor/0.0.1680.1050/-117.-1080.1920.1080@0.0.1680.1050" timestamp="1589891906589" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1590066133602">
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1590292280406">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050/-117.-1080.1920.1080@0.0.1680.1050" timestamp="1590066133602" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050/-117.-1080.1920.1080@0.0.1680.1050" timestamp="1590292280406" />
     <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1589898941495" />
-    <state x="519" y="357" key="com.intellij.ide.util.TipDialog" timestamp="1589966848053">
+    <state x="519" y="357" key="com.intellij.ide.util.TipDialog" timestamp="1590300775906">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="519" y="357" key="com.intellij.ide.util.TipDialog/0.0.1680.1050/-117.-1080.1920.1080@0.0.1680.1050" timestamp="1589966848053" />
+    <state x="519" y="357" key="com.intellij.ide.util.TipDialog/0.0.1680.1050/-117.-1057.1920.1057@0.0.1680.1050" timestamp="1590300775906" />
+    <state x="519" y="357" key="com.intellij.ide.util.TipDialog/0.0.1680.1050/-117.-1080.1920.1080@0.0.1680.1050" timestamp="1590214722005" />
   </component>
 </project>
