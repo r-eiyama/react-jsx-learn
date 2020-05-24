@@ -1,0 +1,36 @@
+<div id="root"></div>
+
+<meta charset="utf-8"/>
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel">
+    function App() {
+        const [num, setNum] = React.useState(0);
+
+        const handleClick = () => setNum(num + 1);
+
+        return (
+            <>
+                <button onClick={handleClick}>{num}</button>
+                {num % 2 === 0 && <Children />}
+            </>
+        );
+    }
+
+    function Children() {
+        React.useEffect(() => {
+            console.log('hello');
+
+            // 👇 クリーンアップ関数を返している
+            // この関数は、Child がアンマウントされるときに実行される
+            return () => console.log('bye');
+        }, []);
+
+        return <p>I am a child.</p>;
+    }
+
+    const root = document.getElementById('root');
+    ReactDOM.render(<App/>, root);
+</script>

@@ -1,0 +1,68 @@
+<div id="root"></div>
+
+<meta charset="utf-8"/>
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<style type="text/css">
+    table {
+        border-collapse: collapse;
+    }
+
+    td {
+        border: 1px solid #ccc;
+        padding: 0.25em 0.5em;
+    }
+</style>
+
+<script type="text/babel">
+    const API = 'https://randomuser.me/api/?results=5&nat=us&inc=gender,name,email';
+
+    function Users() {
+        const [users, setUsers] = React.useState([]);
+
+        // APIを叩く(非同期処理)を行う場合は即時実行関数を使う
+        React.useEffect(() => {
+            // (async () => {
+            //     const response = await fetch(API).then(res => res.json());
+            //     setUsers(response.results);
+            // })();
+
+            //関数を定義して実行でも良い
+            async function fetchUser() {
+                const response = await fetch(API).then(res => res.json());
+                setUsers(response.results);
+            }
+            fetchUser();
+        },[]);
+
+        //中身を確認して見た
+        // {users.map(user => (
+        //     console.log({user})
+        // ))}
+
+        return(
+            <table>
+                <thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>Gender</td>
+                        <td>Email</td>
+                    </tr>
+                </thead>
+                <tbody>
+                {users.map(user => (
+                    <tr key={user.email}>
+                        <td>{user.name.title}. {user.name.first} {user.name.last}</td>
+                        <td>{user.gender}</td>
+                        <td>{user.email}</td>
+                    </tr>
+                ))}
+                </tbody>
+            </table>
+        );
+    }
+
+    const root = document.getElementById('root');
+    ReactDOM.render(<Users />, root);
+</script>

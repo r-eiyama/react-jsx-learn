@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3058716-1d9e-4f31-be78-bc0d4d04af86" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lesson18.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson19.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo.html" beforeDir="false" afterPath="$PROJECT_DIR$/todo.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +55,7 @@
       <workItem from="1589966847344" duration="14183000" />
       <workItem from="1590214700113" duration="4807000" />
       <workItem from="1590289311037" duration="1310000" />
-      <workItem from="1590300469074" duration="7160000" />
+      <workItem from="1590300469074" duration="8930000" />
     </task>
     <task id="LOCAL-00001" summary="learn">
       <created>1589894792444</created>
@@ -133,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590315283422</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="keyの警告を修正">
+      <created>1590315539298</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1590315539298</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,22 +161,23 @@
     <MESSAGE value="数合わせゲーム" />
     <MESSAGE value="復習" />
     <MESSAGE value="Todoアプリ作成" />
-    <option name="LAST_COMMIT_MESSAGE" value="Todoアプリ作成" />
+    <MESSAGE value="keyの警告を修正" />
+    <option name="LAST_COMMIT_MESSAGE" value="keyの警告を修正" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="434" y="127" key="CommitChangelistDialog2" timestamp="1590315282901">
+    <state x="434" y="127" key="CommitChangelistDialog2" timestamp="1590315538967">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="434" y="127" key="CommitChangelistDialog2/0.0.1680.1050/-117.-1080.1920.1080@0.0.1680.1050" timestamp="1590315282901" />
+    <state x="434" y="127" key="CommitChangelistDialog2/0.0.1680.1050/-117.-1080.1920.1080@0.0.1680.1050" timestamp="1590315538967" />
     <state x="434" y="127" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1589898939365" />
     <state x="349" y="164" key="SettingsEditor" timestamp="1589891906589">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="349" y="164" key="SettingsEditor/0.0.1680.1050/-117.-1080.1920.1080@0.0.1680.1050" timestamp="1589891906589" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1590315285230">
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1590315540827">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050/-117.-1080.1920.1080@0.0.1680.1050" timestamp="1590315285230" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050/-117.-1080.1920.1080@0.0.1680.1050" timestamp="1590315540827" />
     <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1589898941495" />
     <state x="519" y="357" key="com.intellij.ide.util.TipDialog" timestamp="1590300775906">
       <screen x="0" y="0" width="1680" height="1050" />
