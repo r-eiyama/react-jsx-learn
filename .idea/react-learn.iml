@@ -9,5 +9,8 @@
     <orderEntry type="library" name="react-dom.development" level="application" />
     <orderEntry type="library" name="babel" level="application" />
     <orderEntry type="library" name="index" level="application" />
+    <orderEntry type="library" name="popper" level="application" />
+    <orderEntry type="library" name="tippy-bundle.umd" level="application" />
+    <orderEntry type="library" name="swiper" level="application" />
   </component>
 </module>

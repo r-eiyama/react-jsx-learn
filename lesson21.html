@@ -1,0 +1,63 @@
+<div id="root"></div>
+
+<meta charSet="utf-8"/>
+<script crossOrigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossOrigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<style type="text/css">
+    table {
+        border-collapse: collapse;
+    }
+
+    td {
+        border: 1px solid #ccc;
+        padding: 0.25em 0.5em;
+    }
+</style>
+
+<script type="text/babel">
+    const API = 'https://randomuser.me/api/?results=5&nat=us&inc=gender,name,email';
+
+    function useUsers() {
+        const[users, setusers] = React.useState([]);
+
+        React.useEffect(() => {
+            (async () => {
+                const response = await fetch(API).then(res => res.json());
+                setUsers(response.results);
+            })();
+
+        }, []);
+
+        return users;
+    }
+
+    function Users() {
+
+        const users = useUsers();
+
+        return (
+            <table>
+                <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Gender</td>
+                    <td>Email</td>
+                </tr>
+                </thead>
+                <tbody>
+                {users.map(user => (
+                    <tr key={user.email}>
+                        <td>{user.name.title}. {user.name.first} {user.name.last}</td>
+                        <td>{user.gender}</td>
+                        <td>{user.email}</td>
+                    </tr>
+                ))}
+                </tbody>
+            </table>
+        );
+    }
+
+    const root = document.getElementById('root');
+    ReactDOM.render(<Users/>, root);
+</script>
