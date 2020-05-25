@@ -1,0 +1,42 @@
+<div id="root"></div>
+
+<meta charSet="utf-8"/>
+<script crossOrigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossOrigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel">
+
+    // 無限ループ:内部状態が更新 => MyConponentが再度実行
+    // function MyComponent() {
+    //     const [name, setName] = React.useState('');
+    //
+    //     console.log('MyComponent');
+    //     setName('John');
+    //
+    //     return <h1>Hello, {name}</h1>
+    // }
+
+    function MyComponent() {
+        console.log('MyComponent');
+        const [name, setName] = React.useState('');
+
+        // レンダリングが終わる際に実行される
+        // React.useEffect(() => {
+        //     console.log('useEffect');
+        //     setName('John');
+        // });
+
+        // useEffectは1回しか呼ばれない
+        React.useEffect(() => {
+            console.log('useEffect');
+            setName('John');
+        }, []);
+
+        return <h1>Hello, {name}</h1>
+
+    }
+
+    const root = document.getElementById('root');
+    ReactDOM.render(<MyComponent/>, root);
+</script>
