@@ -1,0 +1,33 @@
+<div id="root"></div>
+
+<meta charSet="utf-8"/>
+<script crossOrigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossOrigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel">
+
+    function App() {
+        console.log('App');
+
+        const [numA, setNumA] = React.useState(1);
+        const [numB, setNumB] = React.useState(1);
+        const [result, setResult] = React.useState(0);
+
+        React.useEffect(() => {
+            console.log('useEffect');
+            setResult(numA * 2);
+        }, [numA]);
+
+        return (
+            <>
+                <h1>numA * 2 = {result}</h1>
+                <button onClick={() => setNumA(numA + 1)}>{numA}</button>
+                <button onClick={() => setNumB(numB + 1)}>{numB}</button>
+            </>
+        );
+    }
+
+    const root = document.getElementById('root');
+    ReactDOM.render(<App />, root);
+</script>
