@@ -1,0 +1,169 @@
+<div id="container">
+    <!-- This element's contents will be replaced with your component. -->
+</div>
+
+<meta charSet="utf-8"/>
+<script crossOrigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossOrigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<style type="text/css">
+    form {
+        text-align: center;
+    }
+    .label {
+        font-size: 14px;
+        margin-right: 8px;
+    }
+    .error {
+        font-size: 12px;
+        color: #f00;
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+<script type="text/babel">
+    // field object
+    const FIELDS = {
+        userId: 'userId',
+        age: 'age',
+    };
+    // form class
+    class Form extends React.Component {
+        constructor() {
+            super();
+
+            // 初期state
+            this.state = {
+                errors: {},
+                isSubmitEnabled: false,
+            };
+
+            this.elements = null;
+
+            this.handleFormChange = this.handleFormChange.bind(this);
+            this.handleFormBlur = this.handleFormBlur.bind(this);
+            this.handleFormSubmit = this.handleFormSubmit.bind(this);
+        }
+
+        // バリデーション判定メソッド
+        validate(field, value) {
+            if (!value) {
+                return true;
+            }
+
+            let isValid = true;
+            switch (field) {
+                case FIELDS.userId:
+                    isValid = /^[0-9a-zA-Z]+$/.test(value);
+                    break;
+                case FIELDS.age:
+                    isValid = /^[0-9]+$/.test(value);
+                    break;
+                default:
+                    break;
+            }
+
+            return isValid;
+        }
+
+        // サブミットフラグを判定するメソッド
+        setSubmitEnabled() {
+            if (!this.elements) {
+                return;
+            }
+
+            const isNoEmptyFields = Object.values(FIELDS).every(field => this.elements[field].value);
+            const isNoErrors = Object.values(this.state.errors).every(error => !error);
+
+            this.setState({
+                isSubmitEnabled: isNoEmptyFields && isNoErrors,
+            });
+        }
+
+        // フォーム全体の入力値変更を検知
+        handleFormChange() {
+            this.setSubmitEnabled();
+        }
+
+        // フォーカスから外した際に実行
+        handleFormBlur(event) {
+            const field = event.target.name;
+
+            // validation
+            this.setState({
+                errors: {
+                    ...this.state.errors,
+                    [field]: !this.validate(field, event.target.value),
+                },
+            }, () => {
+                this.setSubmitEnabled();
+            });
+        }
+
+        // サブミットボタンを押した際実行
+        handleFormSubmit(event) {
+            event.preventDefault();
+
+
+            // form値取得
+            const params = {
+                userId: this.elements[FIELDS.userId].value,
+                age: this.elements[FIELDS.age].value,
+            };
+            console.log(params);
+
+            alert(JSON.stringify(params, null, '  '));
+        }
+
+        render() {
+            const { errors } = this.state;
+            return (
+                <form
+                    onChange={this.handleFormChange}
+                    onBlur={this.handleFormBlur}
+                    onSubmit={this.handleFormSubmit}
+                    ref={el => this.elements = el && el.elements}
+                >
+                    <div>
+                        <span className="label">ユーザーID</span>
+                        <input
+                            type="text"
+                            name={FIELDS.userId}
+                        />
+                    </div>
+                    {
+                        this.state.errors[FIELDS.userId] &&
+                        <p className="error">
+                            半角英数字で入力してください。
+                        </p>
+                    }
+                    <div>
+                        <span className="label">年齢</span>
+                        <input
+                            type="text"
+                            name={FIELDS.age}
+                        />
+                    </div>
+                    {
+                        this.state.errors[FIELDS.age] &&
+                        <p className="error">
+                            半角数字で入力してください。
+                        </p>
+                    }
+                    <button
+                        type="submit"
+                        disabled={!this.state.isSubmitEnabled}
+                    >submit</button>
+                </form>
+            );
+        }
+    }
+
+    ReactDOM.render(
+        <Form/>,
+        document.getElementById('container')
+    );
+
+</script>
